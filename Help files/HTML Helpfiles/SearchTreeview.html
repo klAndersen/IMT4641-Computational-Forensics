@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <!-- UTF-8 to make it readable in most languages and better showing special letters/signs-->
+    <meta http-equiv=Content-Type content="text/html; charset=utf-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=8" />                 
+    <meta name="generator" content="PSPad editor, www.pspad.com">
+    <!--CSS-->    
+    <link type="text/css" rel="stylesheet" href="Help.css"/>
+    <title>Search treeview</title>
+  </head>
+  <body>
+    <!--The page displayed-->
+    <div id="page">
+      <!--The pages heading-->
+      <div id="heading">
+        <div id="header_text"><h3>Search treeview</h3></div>
+      </div>
+    <!--Help content displayed to user-->
+    <div id="content">
+      <!--images-->
+      <div id="image">
+      <!--image of search within results-->
+      <img src="Images/search_results.jpg" /><br />
+      Searching the treeview for entries with the name "bookmarks".
+      </div>
+      Since a search can result in a lot of data and listings, the result tab 
+      have a search field with a dropdown combobox and a textbox. As one can see 
+      in the image above, the matches are highlighted in yellow. These also 
+      relates to the parent of the highlighted item, so that matches can be found.
+      When executing a new search, all highlighted items will be un-highlighted. 
+      This also happens if you click the button "Clear marked entries".
+      The search is related to the content in the Treeview, and one can search 
+      for:
+      <ol>
+        <li>All: Searches for matches within folder, database and table names</li>
+        <li>Folders: Searches for named matches in the listed folders</li>
+        <li>Databases: Searches for named matches in the listed databases</li>
+        <li>Tables: Searches for named matches in the listed tables</li>
+      </ol>
+      <!--table containing the navigation buttons-->
+      <table>
+        <tr>
+            <!--the previous button-->
+            <td>
+              <form method="" action="SearchResult.html">
+                <input type="submit" value="Previous">
+              </form>
+            </td>
+            <!--the next button-->
+            <td>
+              <form method="" action="NoHits.html">
+                <input type="submit" value="Next">
+              </form>
+            </td>
+          </tr>
+        </table>
+      <!--Copyright and version--> 
+      IMT 4641 Computational Forensics Copyright &copy; 2014 Knut Lucas Andersen. <br />
+      &lt;Current version 1.0.0.0&gt;
+      </div>
+    </div>
+  </body>
+</html>

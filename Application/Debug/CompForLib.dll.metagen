@@ -1,0 +1,68 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly CompForLib, Version=0.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class ComputationalForensics.Conversion: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  Interfaces:
+    System.IDisposable
+  Fields:
+    Int32 INPUT_NOT_A_NUMBER IsConst : Public, Static, HasDefault
+  Methods:
+    convertIntegerToString(Int32): PrivateScope, Public, Static, HideBySig
+    convertDoubleToString(Double): PrivateScope, Public, Static, HideBySig
+    convertStringToInteger(String): PrivateScope, Public, Static, HideBySig
+    convertStringToDouble(String): PrivateScope, Public, Static, HideBySig
+    binaryConverter(List`1, Int32 IsConst): PrivateScope, Public, Static, HideBySig
+    binaryConverter(List`1): PrivateScope, Public, Static, HideBySig
+    convertBinaryStringToInteger(String, Boolean(HasFieldMarshal)): PrivateScope, Public, Static, HideBySig
+    convertBinaryStringToDouble(String, Int32 IsConst): PrivateScope, Public, Static, HideBySig
+    MarshalString(String, basic_string<wchar_t\,std::char_traits<wchar_t>\,std::allocator<wchar_t> >* IsImplicitlyDereferenced): PrivateScope, Public, Static, HideBySig
+    MarshalString(String, basic_string<char\,std::char_traits<char>\,std::allocator<char> >* IsImplicitlyDereferenced): PrivateScope, Public, Static, HideBySig
+    convertConstCharToSTDString(basic_string<char\,std::char_traits<char>\,std::allocator<char> >*, SByte*): PrivateScope, Public, Static, HideBySig
+    convertConstCharToString(SByte*): PrivateScope, Public, Static, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class ComputationalForensics.ExceptionClass: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Exception
+    Void .ctor(System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Methods:
+    ToString(): PrivateScope, Public, Final, Virtual, HideBySig
+    getExceptionTitle(): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class ComputationalForensics.DatabaseObject: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Methods:
+    getRowCountList(): PrivateScope, Public, HideBySig
+    getDatabaseName(): PrivateScope, Public, HideBySig
+    getTableList(): PrivateScope, Public, HideBySig
+    getRowCountAtIndex(Int32): PrivateScope, Public, HideBySig
+    getTableName(Int32): PrivateScope, Public, HideBySig
+    getRows(Int32): PrivateScope, Public, HideBySig
+    getColumnList(Int32): PrivateScope, Public, HideBySig
+    getCellContent(Int32, Int32): PrivateScope, Public, HideBySig
+    getColumnName(Int32, Int32): PrivateScope, Public, HideBySig
+    setDatabaseName(String): PrivateScope, Public, HideBySig
+    setRowCount(Int32): PrivateScope, Public, HideBySig
+    setTableName(String): PrivateScope, Public, HideBySig
+    setColumnNames(List`1): PrivateScope, Public, HideBySig
+    setRows(List`1): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class ComputationalForensics.FileOperations: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  Interfaces:
+    System.IDisposable
+  Methods:
+    readStringFromFile(String): PrivateScope, Public, Static, HideBySig
+    createNewFolderIfNotExists(String): PrivateScope, Public, Static, HideBySig
+    writeToFile(String, String): PrivateScope, Public, Static, HideBySig
+    deleteAllFilesInFolder(String): PrivateScope, Public, Static, HideBySig
+    returnFilePath(String, String): PrivateScope, Public, Static, HideBySig
+    returnListOfDatabaseFiles(String, List`1&): PrivateScope, Public, Static, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig

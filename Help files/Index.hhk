@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Searching">
+		<param name="Name" value="Search configurations">
+		<param name="Local" value="HTML Helpfiles\SearchOptions.html">
+		<param name="Name" value="Search result">
+		<param name="Local" value="HTML Helpfiles\SearchResult.html">
+		<param name="Name" value="Searching">
+		<param name="Local" value="HTML Helpfiles\Searching.html">
+		<param name="Name" value="Search types">
+		<param name="Local" value="HTML Helpfiles\SearchTypes.html">
+		<param name="Name" value="Filetypes">
+		<param name="Local" value="HTML Helpfiles\Filetypes.html">
+		<param name="Name" value="No hits">
+		<param name="Local" value="HTML Helpfiles\NoHits.html">
+		<param name="Name" value="Search treeview">
+		<param name="Local" value="HTML Helpfiles\SearchTreeview.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Types">
+		<param name="Name" value="Search types">
+		<param name="Local" value="HTML Helpfiles\SearchTypes.html">
+		<param name="Name" value="Filetypes">
+		<param name="Local" value="HTML Helpfiles\Filetypes.html">
+		</OBJECT>
+</UL>
+</BODY></HTML>

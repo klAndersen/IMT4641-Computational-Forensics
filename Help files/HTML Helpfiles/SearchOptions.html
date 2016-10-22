@@ -1,0 +1,81 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <!-- UTF-8 to make it readable in most languages and better showing special letters/signs-->
+    <meta http-equiv=Content-Type content="text/html; charset=utf-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=8" />                 
+    <meta name="generator" content="PSPad editor, www.pspad.com">
+    <!--CSS-->    
+    <link type="text/css" rel="stylesheet" href="Help.css"/>
+    <title>Search configurations</title>
+  </head>
+  <body>
+    <!--The page displayed-->
+    <div id="page">
+      <!--The pages heading-->
+      <div id="heading">
+        <div id="header_text"><h3>Configurations</h3></div>
+      </div>
+      <!--Help content displayed to user-->
+      <div id="content">
+        <!--images-->
+        <div id="image">
+          <!--image of startscreen-->
+          <img src="Images/Startscreen.jpg" /><br />
+          Startscreen with settings for the scan
+        </div>
+        <ol>
+          <li>Path to parent folder where subfolders contain SQLite databases.</li>
+          <li>
+          Here all the subfolders get listed, with the option to select one, 
+          several or all. The radiobuttons gives you the option to select all 
+          databases (<i>automatically checks the checkbox "Select all folders"</i>)
+          or select specific ones (<i>at least one folder must be selected</i>).
+          </li>
+          <li>Include types in your search. See 
+          <a href="SearchTypes.html">search types</a>.
+          The radiobutton "All search types" automatically selects all.
+          </li>
+          <li>Include a timeline in the search, by setting a start/end date and time.</li>
+          <li>
+          Include additional search strings.<br /> 
+          This could be locations, name on images, e-mail content, etc.<br />
+          Seperate each search string by newline (<i>it is not possible to search 
+          for complete sentences</i>).
+          </li>
+          <li>
+          Search buttons:
+            <ul>
+              <li>'Start search': Starts the search (<i>Path must be set, and at 
+              least one folder and search type selected</i>).</li>
+              <li>'Cancel search': Cancels the started/ongoing search.</li>
+              <li>'Reset Parameters': Resets the settings back to default.  </li>
+            </ul>
+          </li>
+          <li>Listbox displaying information and error messages.</li>
+        </ol>
+        <br />
+        <!--table containing the navigation buttons-->
+        <table>
+          <tr>
+            <!--the previous button-->
+            <td>
+              <form method="" action="Searching.html">
+                <input type="submit" value="Previous">
+              </form>
+            </td>
+            <!--the next button-->
+            <td>
+              <form method="" action="SearchTypes.html">
+                <input type="submit" value="Next">
+              </form>
+            </td>
+          </tr>
+        </table>
+      <!--Copyright and version--> 
+      IMT 4641 Computational Forensics Copyright &copy; 2014 Knut Lucas Andersen. <br />
+      &lt;Current version 1.0.0.0&gt;
+      </div>
+    </div>
+  </body>
+</html>

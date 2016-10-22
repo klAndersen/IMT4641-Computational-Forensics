@@ -1,0 +1,100 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly CompForLib, Version=0.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class ComputationalForensics.Conversion: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Fields:
+    Int32 INPUT_NOT_A_NUMBER IsConst : Public, Static, HasDefault
+  Methods:
+    convertIntegerToString(Int32): PrivateScope, Public, Static, HideBySig
+    convertDoubleToString(Double): PrivateScope, Public, Static, HideBySig
+    convertStringToInteger(String): PrivateScope, Public, Static, HideBySig
+    convertStringToDouble(String): PrivateScope, Public, Static, HideBySig
+    binaryConverter(List`1, Int32 IsConst): PrivateScope, Public, Static, HideBySig
+    binaryConverter(List`1): PrivateScope, Public, Static, HideBySig
+    convertBinaryStringToInteger(String, Boolean(HasFieldMarshal)): PrivateScope, Public, Static, HideBySig
+    convertBinaryStringToDouble(String, Int32 IsConst): PrivateScope, Public, Static, HideBySig
+    MarshalString(String, basic_string<wchar_t\,std::char_traits<wchar_t>\,std::allocator<wchar_t> >* IsImplicitlyDereferenced): PrivateScope, Public, Static, HideBySig
+    MarshalString(String, basic_string<char\,std::char_traits<char>\,std::allocator<char> >* IsImplicitlyDereferenced): PrivateScope, Public, Static, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class ComputationalForensics.Matrix: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+    Void .ctor(Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Methods:
+    calculateMean(Int32): PrivateScope, Public, HideBySig
+    createMeanMatrix(): PrivateScope, Public, HideBySig
+    calculateCorrectedMean(Int32, Int32, Double): PrivateScope, Public, HideBySig
+    calculateVariance(Int32): PrivateScope, Public, HideBySig
+    createCoVarianceMatrix(Matrix): PrivateScope, Public, HideBySig
+    createScatterMatrix(Matrix, Matrix): PrivateScope, Public, HideBySig
+    matrixAddition(Matrix, Matrix): PrivateScope, Public, HideBySig
+    matrixSubstraction(Matrix, Matrix): PrivateScope, Public, HideBySig
+    matrixMultiplication(Matrix, Matrix, Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    getOptimalLineMatrix(Matrix, Matrix, Matrix): PrivateScope, Public, HideBySig
+    getBetweenClassScatterMatrix(Matrix, Matrix): PrivateScope, Public, HideBySig
+    deleteMatrix(): PrivateScope, Public, HideBySig
+    transposeMatrix(): PrivateScope, Public, HideBySig
+    inverse2DMatrix(): PrivateScope, Public, HideBySig
+    fillMatrixWithValues(Int32, List`1&): PrivateScope, Public, HideBySig
+    changeCellValueAt(Int32, Int32, Double): PrivateScope, Public, HideBySig
+    getNumRows(): PrivateScope, Public, HideBySig
+    getNumColumns(): PrivateScope, Public, HideBySig
+    getMatrix(): PrivateScope, Public, HideBySig
+    getIdentityMatrix(): PrivateScope, Public, HideBySig
+    getCellValueAt(Int32 IsConst, Int32 IsConst): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class ComputationalForensics.ExceptionClass: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Exception
+    Void .ctor(System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Methods:
+    ToString(): PrivateScope, Public, Final, Virtual, HideBySig
+    getExceptionTitle(): PrivateScope, Public, HideBySig
+    throwErrorIfMatrixRowOutOfRange(Int32 IsConst, Int32 IsConst, String): PrivateScope, Public, Static, HideBySig
+    throwErrorIfMatrixColumnOutOfRange(Int32 IsConst, Int32 IsConst, String): PrivateScope, Public, Static, HideBySig
+    throwErrorIfMatrixIsEmpty(Int32 IsConst, Int32 IsConst): PrivateScope, Public, Static, HideBySig
+    throwErrorIfValueListIsEmpty(List`1): PrivateScope, Public, Static, HideBySig
+    throwErrorIfParentMatrixIsEmpty(Int32 IsConst, Int32 IsConst, String): PrivateScope, Public, Static, HideBySig
+    throwErrorIfMatrixNotOfEqualOrder(Matrix, Matrix): PrivateScope, Public, Static, HideBySig
+    throwErrorIfMatrixNot2x2(Int32 IsConst, Int32 IsConst): PrivateScope, Public, Static, HideBySig
+    throwErrorIfColumnAndRowCountDiffers(Int32, Int32, String): PrivateScope, Public, Static, HideBySig
+    throwErrorIfNewSizeLessThanCurrent(Int32, Int32, Boolean(HasFieldMarshal)): PrivateScope, Public, Static, HideBySig
+    throwErrorIflistSizeIsNotEqual(List`1, List`1, String): PrivateScope, Public, Static, HideBySig
+    throwErrorIfSizeGreaterThenValue(Int32 IsConst, Int32 IsConst, String): PrivateScope, Public, Static, HideBySig
+    throwErrorIfSizeLessThenCount(Int32 IsConst, Int32 IsConst, String): PrivateScope, Public, Static, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class ComputationalForensics.FileOperations: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Methods:
+    readStringFromFile(String): PrivateScope, Public, Static, HideBySig
+    createNewFolderIfNotExists(String): PrivateScope, Public, Static, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class ComputationalForensics.Statistics: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Fields:
+    System.String FAILED_AT_VARIANCE_CALCULATION : Public, Static
+  Methods:
+    calculateMean(List`1): PrivateScope, Public, HideBySig
+    calculateMean(List`1): PrivateScope, Public, HideBySig
+    calculateVariance(List`1, Double): PrivateScope, Public, HideBySig
+    calculateStdDev(Double): PrivateScope, Public, HideBySig
+    calculateK1(Double, Double): PrivateScope, Public, HideBySig
+    calculateCoVariance(List`1, List`1): PrivateScope, Public, HideBySig
+    calculateCorrelationCoefficient(List`1, List`1): PrivateScope, Public, HideBySig
+    calculateLinearRegression(List`1, List`1, Double, Double* IsImplicitlyDereferenced, Double* IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig

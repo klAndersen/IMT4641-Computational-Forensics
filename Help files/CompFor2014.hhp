@@ -1,0 +1,22 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=CompFor2014.chm
+Contents file=Table of Contents.hhc
+Default topic=HTML Helpfiles\Filetypes.html
+Display compile progress=No
+Index file=Index.hhk
+Language=0x414 Norwegian, Bokmål (Norway)
+
+
+[FILES]
+HTML Helpfiles\Filetypes.html
+HTML Helpfiles\NoHits.html
+HTML Helpfiles\Searching.html
+HTML Helpfiles\SearchOptions.html
+HTML Helpfiles\SearchResult.html
+HTML Helpfiles\SearchTypes.html
+HTML Helpfiles\Startpage.html
+HTML Helpfiles\SearchTreeview.html
+
+[INFOTYPES]
+
