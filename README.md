@@ -4,7 +4,7 @@ Project abstract:
 Mobile forensics is a relatively new thing, but with the increasing amount of mobile phones,
 tablets and applications created for these, a forensic investigator needs more knowledge about
 these devices. There are several hundred thousand applications out there, each created for a
-dierent OS with a dierent storage system (e.g. XML, CSV, SQLite, Text files, etc.).
+different OS with a different storage system (e.g. XML, CSV, SQLite, Text files, etc.).
 How should an investigator proceed to get the needed evidence in time? What processes can be
 used to speed up the investigation? What should an investigator look for? My focus on this
 problem will be to attempt to develop an automation tool for the Android OS, by use of machine
