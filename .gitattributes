@@ -1,2 +1,2 @@
-special-vendored-path/* linguist-vendored
-SQLite3 linguist-vendored=True
+SQLite3/* linguist-vendored
+
