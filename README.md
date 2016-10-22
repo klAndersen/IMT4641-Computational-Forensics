@@ -14,12 +14,9 @@ the tool to be developed is the possibility to analyze the file storage (SQLite)
 the investigator needs. The main focus will be on logs and information retrieval, like image data,
 GPS/localization logs, e-mail information or other kinds of logs/data found in the database(s).
 
+
 List of folders and content explanation:
-
 * Application: The graphical user interface and location of compiled application
-
 * Help files: Help files used to create the help file (.chm) used in the application (F1)
-
 * Library: Library linked to the application. Most of the basic classes are found here
-
 * SQLite3: Compiled library with header from the SQLite sourcecode (not made by me)
